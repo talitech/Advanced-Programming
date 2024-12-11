@@ -1,8 +1,8 @@
 package Lecture4_interfaces_abstract_classes;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.util.Calendar;
+
+import org.jetbrains.annotations.NotNull;
 
 public class WithdrawalTransaction extends BaseTransaction {
     public WithdrawalTransaction(int amount, @NotNull Calendar date) {
@@ -28,7 +28,7 @@ public class WithdrawalTransaction extends BaseTransaction {
     }
 
     /*
-    Oportunity for assignment: implementing different form of withdrawal
+     * Oportunity for assignment: implementing different form of withdrawal
      */
     public void apply(BankAccount ba) {
         double curr_balance = ba.getBalance();
@@ -39,7 +39,7 @@ public class WithdrawalTransaction extends BaseTransaction {
     }
 
     /*
-    Assignment 1 Q3: Write the Reverse method - a method unique to the WithdrawalTransaction Class
+     * Assignment 1 Q3: Write the Reverse method - a method unique to the
+     * WithdrawalTransaction Class
      */
 }
-
